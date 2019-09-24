@@ -23,7 +23,7 @@ class BSTree {
         */
 
         bool find(T data) {
-            Node<T>*temporal=root;
+            Node<T>*temporal=this->root;
 
             if (temporal == nullptr){
                 return false;
@@ -45,11 +45,11 @@ class BSTree {
                 return false;
             }
 
-            if (temporal2->data == data){
+            if (temporal2->data==data){
                 return true;
             }
 
-            if (temporal2->data < data){
+            if (temporal2->data<data){
                 find2(data,temporal2->right);
             }
 
@@ -69,7 +69,7 @@ class BSTree {
             Node<T>*recorredor2;
 
             if(root== nullptr){
-                this->root=temporal;
+                root=temporal;
             }
 
             while (recorredor != nullptr) {
