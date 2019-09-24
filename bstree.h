@@ -12,19 +12,46 @@ class BSTree {
         BSTree() : root(nullptr) {};
         int nodes;
 
-        bool find(T data) { 
-            if (root== nullptr or root->data==data){
-                    return root;
+/*
+        Node<T>* minValueNode(Node<T>* nodo)
+        {
+            auto NodeActual = nodo;
+            while(NodeActual and NodeActual->left != nullptr)
+                NodeActual = NodeActual->left;
+            return NodeActual;
+        }
+        */
+
+        bool find(T data) {
+            Node<T>*temporal=root;
+
+            if (temporal == nullptr || temporal->data == data){
+                    return true;
             }
-            if (root->data < data){
-                    root=root->right;
-                    return find(data);
+
+            if (root){
+                find2(data,temporal);
             }
-            if (root->data > data){
-                    root=root->left;
-                    return find(data);
+
+
+        }
+
+        bool find2(T data,Node<T>*temporal2){//Profe puso Node<T>*&temporal2
+
+            if(temporal2==nullptr){
+                return false;
             }
-        } 
+
+            if (temporal2->data < data){
+                temporal2=temporal2->right;
+                find2(data,temporal2->right);
+            }
+
+            if (temporal2->data > data){
+                temporal2=temporal2->left;
+                find2(data,temporal2->left);
+            }
+        }
 
         void insert(T data) {
 
@@ -58,26 +85,30 @@ class BSTree {
         }
 
         bool remove(T data) {
-            Node<T>*recorredor=root;
-            if(root= nullptr){
+            Node<T> *recorredor = root;
+            if (root = nullptr) {
                 return true;
             }
-            if(data<recorredor->data){
-                recorredor=recorredor->right;
+            if (data < recorredor->data) {
+                recorredor = recorredor->right;
                 remove(data);
-            }
-            else if(data>recorredor->data){
-                recorredor=recorredor->left;
+            } else if (data > recorredor->data) {
+                recorredor = recorredor->left;
                 remove(data);
+            } else {
+                if (root->left == nullptr) {
+                    Node<T> *temporal = root->right;
+                    delete (root);
+                } else if (root->right == nullptr) {
+                    Node<T> *temporal = root->left;
+                    delete (root);
+                }
+                return true;
             }
         }
 
         unsigned int size() {
             return this->nodes;
-        }
-
-        size_t height() {
-            // TODO
         }
 
         void traversePreOrder() {

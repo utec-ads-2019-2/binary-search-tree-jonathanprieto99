@@ -34,10 +34,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f22661f8-1ea7-474a-8b76-8d42d864a4a3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bstree.h" beforeDir="false" afterPath="$PROJECT_DIR$/bstree.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/binary-search-tree-jonathanprieto99" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/binary-search-tree-jonathanprieto99" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,6 +44,20 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FUSProjectUsageTrigger">
@@ -61,7 +74,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cpp" value="6" />
+          <entry key="cpp" value="7" />
           <entry key="h" value="7" />
           <entry key="txt" value="4" />
         </counts>
@@ -69,19 +82,20 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CMakeLists.txt" value="4" />
-          <entry key="ObjectiveC" value="13" />
+          <entry key="ObjectiveC" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="h" value="865" />
-          <entry key="txt" value="19" />
+          <entry key="h" value="1393" />
+          <entry key="txt" value="32" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="19" />
-          <entry key="ObjectiveC" value="865" />
+          <entry key="ObjectiveC" value="1393" />
+          <entry key="PLAIN_TEXT" value="13" />
         </counts>
       </usages-collector>
     </session>
@@ -91,10 +105,22 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bstree.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="64" column="38" lean-forward="true" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
+            <state relative-caret-position="123">
+              <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
               <folding>
                 <element signature="e#35#52#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tester/tester.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="146">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="e#327#339#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -146,6 +172,11 @@
             <path>
               <item name="binary-search-tree-jonathanprieto99" type="b2602c69:ProjectViewProjectNode" />
               <item name="binary-search-tree-jonathanprieto99" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="binary-search-tree-jonathanprieto99" type="b2602c69:ProjectViewProjectNode" />
+              <item name="binary-search-tree-jonathanprieto99" type="462c0819:PsiDirectoryNode" />
+              <item name="tester" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -202,24 +233,31 @@
       <workItem from="1568936740763" duration="3576000" />
       <workItem from="1569190004468" duration="1490000" />
       <workItem from="1569198227760" duration="1248000" />
-      <workItem from="1569199700599" duration="8065000" />
+      <workItem from="1569199700599" duration="16753000" />
     </task>
+    <task id="LOCAL-00001" summary="Primer Avance">
+      <created>1569243263809</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1569243263811</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14379000" />
+    <option name="totallyTimeSpent" value="23067000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.123032905" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32713756" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39900866" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32713756" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39900866" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -233,8 +271,8 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="LuaJ" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="LuaJ" order="3" weight="0.3297568" />
+      <window_info anchor="right" id="Database" order="4" weight="0.3297568" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,6 +280,26 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Primer Avance" />
+    <option name="LAST_COMMIT_MESSAGE" value="Primer Avance" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="CMakeRunConfiguration">
+        <watch expression="this-&gt;nodes" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>temporal</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/mocker/mocker.cpp">
@@ -275,13 +333,6 @@
     <entry file="file://$PROJECT_DIR$/iterator.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tester/tester.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -299,10 +350,20 @@
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/tester/tester.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#327#339#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/bstree.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="64" column="38" lean-forward="true" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
+        <state relative-caret-position="123">
+          <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
           <folding>
             <element signature="e#35#52#0" expanded="true" />
           </folding>
