@@ -50,11 +50,13 @@ class BSTree {
             }
 
             if (temporal2->data<data){
-                find2(data,temporal2->right);
+                temporal2=temporal2->right;
+                find2(data,temporal2);
             }
 
             if (temporal2->data > data){
-                find2(data,temporal2->left);
+                temporal2=temporal2->left;
+                find2(data,temporal2);
             }
         }
 
