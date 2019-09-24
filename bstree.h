@@ -25,7 +25,11 @@ class BSTree {
         bool find(T data) {
             Node<T>*temporal=root;
 
-            if (temporal == nullptr || temporal->data == data){
+            if (temporal == nullptr){
+                return false;
+            }
+
+            if (temporal->data == data){
                     return true;
             }
 
@@ -33,22 +37,23 @@ class BSTree {
                 find2(data,temporal);
             }
 
-
         }
 
-        bool find2(T data,Node<T>*temporal2){//Profe puso Node<T>*&temporal2
+        bool find2(T data,Node<T>*&temporal2){//Profe puso Node<T>*&temporal2
 
-            if(temporal2==nullptr){
+            if (temporal2 == nullptr){
                 return false;
             }
 
+            if (temporal2->data == data){
+                return true;
+            }
+
             if (temporal2->data < data){
-                temporal2=temporal2->right;
                 find2(data,temporal2->right);
             }
 
             if (temporal2->data > data){
-                temporal2=temporal2->left;
                 find2(data,temporal2->left);
             }
         }
