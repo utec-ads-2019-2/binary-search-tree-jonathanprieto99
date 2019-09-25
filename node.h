@@ -12,6 +12,8 @@ class Node {
     T data;
     Node<T> *left;
     Node<T> *right;
+    Node(): data(0) {left = right = nullptr;}
+    Node(T data) : data(data){ left = right = nullptr; }
 
     template<class>
     friend class BSTree; 

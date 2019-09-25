@@ -36,7 +36,10 @@
     <list default="true" id="f22661f8-1ea7-474a-8b76-8d42d864a4a3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bstree.h" beforeDir="false" afterPath="$PROJECT_DIR$/bstree.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/binary-search-tree-jonathanprieto99.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/binary-search-tree-jonathanprieto99.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/binary-search-tree-jonathanprieto99" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/binary-search-tree-jonathanprieto99" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node.h" beforeDir="false" afterPath="$PROJECT_DIR$/node.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tester/tester.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tester/tester.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -74,39 +77,69 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cpp" value="7" />
-          <entry key="h" value="7" />
-          <entry key="txt" value="4" />
+          <entry key="cpp" value="8" />
+          <entry key="h" value="9" />
+          <entry key="txt" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CMakeLists.txt" value="4" />
-          <entry key="ObjectiveC" value="14" />
+          <entry key="CMakeLists.txt" value="5" />
+          <entry key="ObjectiveC" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="h" value="1479" />
-          <entry key="txt" value="32" />
+          <entry key="h" value="1674" />
+          <entry key="txt" value="46" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="19" />
-          <entry key="ObjectiveC" value="1479" />
-          <entry key="PLAIN_TEXT" value="13" />
+          <entry key="ObjectiveC" value="1674" />
+          <entry key="PLAIN_TEXT" value="27" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="6" lean-forward="true" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+              <folding>
+                <element signature="e#40#52#0" expanded="true" />
+                <element signature="e#78#90#0" expanded="true" />
+                <element signature="e#118#130#0" expanded="true" />
+                <element signature="e#208#215#0" expanded="true" />
+                <element signature="e#255#262#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="42" lean-forward="true" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/iterator.h">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bstree.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="52" column="43" lean-forward="true" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
+            <state relative-caret-position="398">
+              <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
               <folding>
                 <element signature="e#35#52#0" expanded="true" />
               </folding>
@@ -117,18 +150,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tester/tester.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="271">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="e#327#339#0" expanded="true" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/iterator.h">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -147,6 +175,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/tester/tester.cpp" />
+        <option value="$PROJECT_DIR$/node.h" />
         <option value="$PROJECT_DIR$/bstree.h" />
       </list>
     </option>
@@ -157,9 +187,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="height" value="827" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -172,11 +203,6 @@
             <path>
               <item name="binary-search-tree-jonathanprieto99" type="b2602c69:ProjectViewProjectNode" />
               <item name="binary-search-tree-jonathanprieto99" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="binary-search-tree-jonathanprieto99" type="b2602c69:ProjectViewProjectNode" />
-              <item name="binary-search-tree-jonathanprieto99" type="462c0819:PsiDirectoryNode" />
-              <item name="tester" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -233,7 +259,7 @@
       <workItem from="1568936740763" duration="3576000" />
       <workItem from="1569190004468" duration="1490000" />
       <workItem from="1569198227760" duration="1248000" />
-      <workItem from="1569199700599" duration="18552000" />
+      <workItem from="1569199700599" duration="23965000" />
     </task>
     <task id="LOCAL-00001" summary="Primer Avance">
       <created>1569243263809</created>
@@ -263,29 +289,35 @@
       <option name="project" value="LOCAL" />
       <updated>1569326169427</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Segundo Avance">
+      <created>1569327590987</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1569327590987</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24866000" />
+    <option name="totallyTimeSpent" value="30279000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1440" height="827" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.123032905" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32713756" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39900866" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.20646067" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.34269664" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="TeamCity" order="8" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.25774473" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.25702247" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32959327" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
@@ -305,7 +337,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Primer Avance" />
-    <option name="LAST_COMMIT_MESSAGE" value="Primer Avance" />
+    <MESSAGE value="Segundo Avance" />
+    <option name="LAST_COMMIT_MESSAGE" value="Segundo Avance" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -316,6 +349,11 @@
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>this-&gt;nodes</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>temporal</expression-string>
         <language-id>ObjectiveC</language-id>
@@ -345,10 +383,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+          <caret line="8" column="42" lean-forward="true" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -357,8 +398,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/node.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="360">
+          <caret line="24" column="6" lean-forward="true" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
           <folding>
             <element signature="e#40#52#0" expanded="true" />
             <element signature="e#78#90#0" expanded="true" />
@@ -369,13 +410,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/tester/tester.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="271">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="e#327#339#0" expanded="true" />
           </folding>
@@ -384,8 +422,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bstree.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="52" column="43" lean-forward="true" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
+        <state relative-caret-position="398">
+          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
           <folding>
             <element signature="e#35#52#0" expanded="true" />
           </folding>

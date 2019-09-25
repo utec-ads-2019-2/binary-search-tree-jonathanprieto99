@@ -3,6 +3,8 @@
 
 #include "node.h"
 #include "iterator.h"
+#include <iostream>
+using namespace std;
 
 template <typename T> 
 class BSTree {
@@ -12,24 +14,16 @@ class BSTree {
         BSTree() : root(nullptr) {};
         int nodes;
 
-/*
-        Node<T>* minValueNode(Node<T>* nodo)
-        {
-            auto NodeActual = nodo;
-            while(NodeActual and NodeActual->left != nullptr)
-                NodeActual = NodeActual->left;
-            return NodeActual;
-        }
-        */
-
         bool find(T data) {
             Node<T>*temporal=this->root;
 
             if (temporal == nullptr){
+                cout<<data<<" false";
                 return false;
             }
 
             if (temporal->data == data){
+                cout<<data<<" true";
                     return true;
             }
 
@@ -42,10 +36,12 @@ class BSTree {
         bool find2(T data,Node<T>*&temporal2){//Profe puso Node<T>*&temporal2
 
             if (temporal2 == nullptr){
+                cout<<data<<" false";
                 return false;
             }
 
             if (temporal2->data==data){
+                cout<<data<<" true";
                 return true;
             }
 
@@ -62,51 +58,62 @@ class BSTree {
 
         void insert(T data) {
 
-            auto*temporal= new Node<T>;
+            Node<T> *temporal= new Node<T>;
             temporal->data=data;
             temporal->right= nullptr;
             temporal->left= nullptr;
 
-            Node<T>*recorredor=root;
+            Node<T>*recorredor=this->root;
             Node<T>*recorredor2;
 
-            if(root== nullptr){
+            if(root==nullptr){
                 root=temporal;
             }
 
             while (recorredor != nullptr) {
                 recorredor2 = recorredor;
-                if (data < recorredor->data)
+                if (data < recorredor->data){
                     recorredor = recorredor->left;
-                else
+                }
+                else{
                     recorredor = recorredor->right;
+                }
+
             }
 
             if(data<recorredor2->data){
-                recorredor2->left=temporal;
+                recorredor2->left=new Node<T>(data);
         }
-            else{
-                recorredor2->right=temporal;
+            else if(data>recorredor2->data){
+                recorredor2->right=new Node<T>(data);
             }
             nodes++;
         }
 
         bool remove(T data) {
             Node<T> *recorredor = root;
-            if (root = nullptr) {
+            if (root == nullptr) {
                 return true;
             }
+
             if (data < recorredor->data) {
                 recorredor = recorredor->right;
                 remove(data);
-            } else if (data > recorredor->data) {
+            }
+
+            else if (data > recorredor->data) {
                 recorredor = recorredor->left;
                 remove(data);
-            } else {
+            }
+
+            else {
+
                 if (root->left == nullptr) {
                     Node<T> *temporal = root->right;
                     delete (root);
-                } else if (root->right == nullptr) {
+                }
+
+                else if (root->right == nullptr) {
                     Node<T> *temporal = root->left;
                     delete (root);
                 }
