@@ -42,7 +42,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f22661f8-1ea7-474a-8b76-8d42d864a4a3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bstree.h" beforeDir="false" afterPath="$PROJECT_DIR$/bstree.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iterator.h" beforeDir="false" afterPath="$PROJECT_DIR$/iterator.h" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -82,84 +84,34 @@
         <counts>
           <entry key="cmake" value="1" />
           <entry key="cpp" value="9" />
-          <entry key="h" value="10" />
+          <entry key="h" value="11" />
           <entry key="txt" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CMakeLists.txt" value="6" />
-          <entry key="ObjectiveC" value="19" />
+          <entry key="ObjectiveC" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cpp" value="294" />
-          <entry key="h" value="2414" />
-          <entry key="txt" value="203" />
+          <entry key="h" value="2473" />
+          <entry key="txt" value="258" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="39" />
-          <entry key="ObjectiveC" value="2708" />
-          <entry key="PLAIN_TEXT" value="164" />
+          <entry key="ObjectiveC" value="2767" />
+          <entry key="PLAIN_TEXT" value="219" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
-              <folding>
-                <element signature="e#40#52#0" expanded="true" />
-                <element signature="e#78#90#0" expanded="true" />
-                <element signature="e#118#130#0" expanded="true" />
-                <element signature="e#208#215#0" expanded="true" />
-                <element signature="e#255#262#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="73" lean-forward="true" selection-start-line="8" selection-start-column="73" selection-end-line="8" selection-end-column="73" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/iterator.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1680">
-              <caret line="112" column="38" lean-forward="true" selection-start-line="112" selection-start-column="38" selection-end-line="112" selection-end-column="38" />
-              <folding>
-                <element signature="e#38#54#0" expanded="true" />
-                <element signature="e#67#79#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tester/tester.cpp">
           <provider selected="true" editor-type-id="text-editor">
@@ -175,10 +127,22 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bstree.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="121" column="26" lean-forward="true" selection-start-line="121" selection-start-column="26" selection-end-line="121" selection-end-column="26" />
+            <state relative-caret-position="373">
+              <caret line="118" lean-forward="true" selection-start-line="118" selection-end-line="118" />
               <folding>
                 <element signature="e#35#52#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/iterator.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+              <folding>
+                <element signature="e#38#54#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -219,7 +183,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="720" />
     <option name="y" value="23" />
     <option name="width" value="720" />
@@ -292,7 +256,7 @@
       <workItem from="1568936740763" duration="3576000" />
       <workItem from="1569190004468" duration="1490000" />
       <workItem from="1569198227760" duration="1248000" />
-      <workItem from="1569199700599" duration="39290000" />
+      <workItem from="1569199700599" duration="40047000" />
     </task>
     <task id="LOCAL-00001" summary="Primer Avance">
       <created>1569243263809</created>
@@ -350,11 +314,18 @@
       <option name="project" value="LOCAL" />
       <updated>1569499070789</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Intento Remove con Dos hijos (falta completar funcion)">
+      <created>1569499302228</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1569499302228</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45604000" />
+    <option name="totallyTimeSpent" value="46361000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -366,10 +337,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="827" extended-state="6" />
+    <frame x="720" y="23" width="720" height="827" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.123032905" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25368732" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -381,7 +352,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286517" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="TeamCity" order="8" weight="0.3286517" />
-      <window_info active="true" anchor="bottom" id="Messages" order="9" visible="true" weight="0.25702247" />
+      <window_info anchor="bottom" id="Messages" order="9" visible="true" weight="0.26598838" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3286517" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
@@ -403,7 +374,8 @@
     <MESSAGE value="Primer Avance" />
     <MESSAGE value="Segundo Avance" />
     <MESSAGE value="ITERATOR.H AVANCE (NO BOTA ERROR, PERO HAY ERROR AUN EN EL BSTREE QUE PODRIA ESTAR OCULTANDO LOS ERRORES DEL AVANCE)" />
-    <option name="LAST_COMMIT_MESSAGE" value="ITERATOR.H AVANCE (NO BOTA ERROR, PERO HAY ERROR AUN EN EL BSTREE QUE PODRIA ESTAR OCULTANDO LOS ERRORES DEL AVANCE)" />
+    <MESSAGE value="Intento Remove con Dos hijos (falta completar funcion)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Intento Remove con Dos hijos (falta completar funcion)" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -451,6 +423,30 @@
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/node.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+          <folding>
+            <element signature="e#40#52#0" expanded="true" />
+            <element signature="e#78#90#0" expanded="true" />
+            <element signature="e#118#130#0" expanded="true" />
+            <element signature="e#208#215#0" expanded="true" />
+            <element signature="e#255#262#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -468,45 +464,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
-          <folding>
-            <element signature="e#40#52#0" expanded="true" />
-            <element signature="e#78#90#0" expanded="true" />
-            <element signature="e#118#130#0" expanded="true" />
-            <element signature="e#208#215#0" expanded="true" />
-            <element signature="e#255#262#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/iterator.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1680">
-          <caret line="112" column="38" lean-forward="true" selection-start-line="112" selection-start-column="38" selection-end-line="112" selection-end-column="38" />
+        <state relative-caret-position="300">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="e#38#54#0" expanded="true" />
-            <element signature="e#67#79#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bstree.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="121" column="26" lean-forward="true" selection-start-line="121" selection-start-column="26" selection-end-line="121" selection-end-column="26" />
+        <state relative-caret-position="373">
+          <caret line="118" lean-forward="true" selection-start-line="118" selection-end-line="118" />
           <folding>
             <element signature="e#35#52#0" expanded="true" />
           </folding>

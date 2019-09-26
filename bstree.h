@@ -12,7 +12,7 @@ class BSTree {
 
     public:
         BSTree() : root(nullptr) {};
-        int nodes;
+        int nodes{};
 
         bool find(T data) {
             Node<T>*temporal=this->root;
@@ -107,24 +107,30 @@ class BSTree {
             else {
 
                 if (recorredor->left == nullptr and recorredor->right == nullptr) {
-                    delete (recorredor);
+                    if (recorredor==root){
+                        root=nullptr;
+                        delete (recorredor);
+                        nodes--;
+                    }
+                    else{
+                        Node<T> *temporal;
+                        temporal=minValueNode(recorredor->right);
+                        if(temporal!= nullptr){
+
+                        }
+                        nodes--;
+                    }
                 }
 
                 else if (recorredor->left && !recorredor->right) {
                     recorredor2->left=recorredor->left;
                     delete(recorredor);
+                    nodes--;
                 }
                 else if(recorredor->right && !recorredor->left){
                     recorredor2->right=recorredor->right;
                     delete(recorredor);
-                }
-
-                else if (recorredor->right!=nullptr and recorredor->left!=nullptr) {
-                    Node<T> *temporal;
-                    temporal=minValueNode(recorredor->right);
-                    if(temporal!= nullptr){
-
-                    }
+                    nodes--;
                 }
 
                 }

@@ -5,7 +5,6 @@
 #include "node.h"
 
 using namespace std;
-
 template <typename T> 
 
 class Iterator {
