@@ -64,18 +64,26 @@ class BSTree {
             }
 
             while (recorredor != nullptr) {
-                	if (data < recorredor->data){
-			if(recorredor->left){
-                    	recorredor = recorredor->left;
-			}
-			else recorredor->left=temporal;
-                }
-                else{
-			if(recorredor->right) recorredor = recorredor->left;
-                        else recorredor->right=temporal;
-                }
-            }
-            nodes++;
+                if (data < recorredor->data){
+                    if(recorredor->left){
+                                recorredor = recorredor->left;
+                    }
+                    else{
+                        recorredor->left=temporal;
+                        break;
+                    }
+                        }
+                        else{
+                            if(recorredor->right){
+                                recorredor = recorredor->right;
+                            }
+                            else{
+                                recorredor->right=temporal;
+                                break;
+                            }
+                                }
+                    }
+                    nodes++;
         }
 
     Node<T>* minValueNode(Node<T>* node)
