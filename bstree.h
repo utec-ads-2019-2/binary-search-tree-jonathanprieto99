@@ -15,75 +15,69 @@ class BSTree {
         int nodes{};
 
         bool find(T data) {
-            Node<T>*temporal=this->root;
 
-            if (temporal == nullptr){
+            Node<T> *temporal = root;
+
+            if (!temporal)
+            {
                 return false;
             }
 
-            if (temporal->data == data){
-                    return true;
-            }
+            if (root!=nullptr){
 
-            if (root){
                 find2(data,temporal);
-            }
-
-        }
-
-        bool find2(T data,Node<T>*&temporal2){//Profe puso Node<T>*&temporal2
-
-            if (temporal2 == nullptr){
-                return false;
-            }
-
-            if (temporal2->data==data){
                 return true;
             }
-
-            if (temporal2->data<data){
-                temporal2=temporal2->right;
-                find2(data,temporal2);
+            else{
+                return false;
             }
+            return false;
 
-            if (temporal2->data > data){
-                temporal2=temporal2->left;
-                find2(data,temporal2);
-            }
         }
 
-        void insert(T data) {
-
-            Node<T> *temporal= new Node<T>(data);
-
-            Node<T>*recorredor=root;
-
-            if(root==nullptr){
-                root=temporal;
-		return;
+        bool find2(T data,Node<T> *&temporal){//Profe puso Node<T>*&temporal
+            if (temporal)
+            {
+                if (temporal->data==data){
+                    return true;
+                }else if (temporal->data>data){
+                    temporal=temporal->left;
+                    find2(data,temporal);
+                }else {
+                    temporal=temporal->right;
+                    find2(data,temporal);
+                }
+            }else{
+                return false;
             }
+            return true;
+        }
 
-            while (recorredor != nullptr) {
+        bool insert(T data) {
+
+            Node<T> *recorredor = root, *recorredor2;
+            if(!root){
+                root = new Node<T>(data);
+                nodes++;
+                return true;
+            }
+            while (recorredor) {
+                recorredor2 = recorredor;
                 if (data < recorredor->data){
-                    if(recorredor->left){
-                                recorredor = recorredor->left;
-                    }
-                    else{
-                        recorredor->left=temporal;
-                        break;
-                    }
-                        }
-                        else{
-                            if(recorredor->right){
-                                recorredor = recorredor->right;
-                            }
-                            else{
-                                recorredor->right=temporal;
-                                break;
-                            }
-                                }
-                    }
-                    nodes++;
+                    recorredor = recorredor->left;
+                }
+                else{
+                    recorredor = recorredor->right;
+                }
+            }
+            if(data<recorredor2->data){
+                recorredor2->left = new Node<T>(data);
+            }
+            else{
+                recorredor2->right = new Node<T>(data);
+            }
+            nodes++;
+            return true;
         }
 
     Node<T>* minValueNode(Node<T>* node)
