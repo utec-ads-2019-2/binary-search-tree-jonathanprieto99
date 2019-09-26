@@ -15,6 +15,10 @@ iostream
 -
 
 /Users/jonathanprieto/Documents/GitHub/binary-search-tree-jonathanprieto99/iterator.h
+stack
+-
+iostream
+-
 node.h
 /Users/jonathanprieto/Documents/GitHub/binary-search-tree-jonathanprieto99/node.h
 

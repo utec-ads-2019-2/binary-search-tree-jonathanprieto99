@@ -128,8 +128,6 @@ class BSTree {
                 }
 
                 //Test
-
-
                 }
                 Node<T> *temporal = minValueNode(root->right);
                 root->data = temporal->data;
@@ -142,28 +140,63 @@ class BSTree {
             return this->nodes;
         }
 
-        void traversePreOrder() {
-            // TODO
+        void traversePreOrder(Node<T>* node) {
+            if(this->nodes==0){
+                return throw;
+            }
+            else {
+                std::cout << node->data << std::endl;
+                if(node->left){
+                    traversePreOrder(node->left);
+                }
+                if(node->right){
+                    traversePreOrder(node->right);
+                }
+            }
         }
 
-        void traverseInOrder() {
-            // TODO
+        void traverseInOrder(Node<T>* node) {
+            if(this->nodes==0){
+                throw;
+            }
+            else
+            {
+                if(node->left){
+                    traverseInOrder(node->left);
+                }
+                std::cout << node->data << std::endl;
+                if(node->right){
+                    traverseInOrder(node->right);
+                }
+            };
         }
 
-        void traversePostOrder() {
-            // TODO
+        void traversePostOrder(Node<T>* node) {
+            if(this->nodes==0){
+                return throw;
+            }
+            else
+            {
+                if(node->left){
+                    traversePostOrder(node->left);
+                }
+                if(node->right){
+                    traversePostOrder(node->right);
+                }
+                std::cout << node->data << std::endl;
+            };
         }
 
         Iterator<T> begin() {
-            // TODO
+            return Iterator<T> (this->root);
         }
 
-        Iterator<T> end() { 
-            // TODO
+        Iterator<T> end() {
+            return Iterator<T> ();
         }
 
         ~BSTree() {
-            // TODO
+            this->root->killself(this->root);
         }
 };
 
