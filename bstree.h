@@ -94,7 +94,7 @@ class BSTree {
         return currentNode;
     }
 
-    bool remove(T data) {
+    bool MatadorNodos(Node<T>* tempo,T data) {
             Node<T> *recorredor = root;
             Node<T> *recorredor2;
 
@@ -103,13 +103,13 @@ class BSTree {
             if (data < recorredor->data) {
                 recorredor2=recorredor;
                 recorredor = recorredor->right;
-                remove(data);
+                MatadorNodos(recorredor,data);
             }
 
             else if (data > recorredor->data) {
                 recorredor2=recorredor;
                 recorredor = recorredor->left;
-                remove(data);
+                MatadorNodos(recorredor,data);
             }
 
             else {
@@ -119,14 +119,15 @@ class BSTree {
                         root=nullptr;
                         delete (recorredor);
                         nodes--;
+                        return true;
                     }
                     else{
                         Node<T> *temporal;
                         temporal=minValueNode(recorredor->right);
-                        if(temporal!= nullptr){
-
-                        }
+                        recorredor->data=temporal->data;
+                        MatadorNodos(recorredor->right, temporal->data);
                         nodes--;
+                        return true;
                     }
                 }
 
@@ -134,11 +135,13 @@ class BSTree {
                     recorredor2->left=recorredor->left;
                     delete(recorredor);
                     nodes--;
+                    return true;
                 }
                 else if(recorredor->right && !recorredor->left){
                     recorredor2->right=recorredor->right;
                     delete(recorredor);
                     nodes--;
+                    return true;
                 }
 
                 }
@@ -147,6 +150,10 @@ class BSTree {
         unsigned int size() {
             return this->nodes;
         }
+
+    bool remove(T data) {
+        return MatadorNodos(this->root, data);
+    }
 
         void traversePreOrder(Node<T>* node) {
             if(this->nodes==0){
