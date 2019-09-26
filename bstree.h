@@ -18,12 +18,10 @@ class BSTree {
             Node<T>*temporal=this->root;
 
             if (temporal == nullptr){
-                cout<<data<<" false";
                 return false;
             }
 
             if (temporal->data == data){
-                cout<<data<<" true";
                     return true;
             }
 
@@ -36,12 +34,10 @@ class BSTree {
         bool find2(T data,Node<T>*&temporal2){//Profe puso Node<T>*&temporal2
 
             if (temporal2 == nullptr){
-                cout<<data<<" false";
                 return false;
             }
 
             if (temporal2->data==data){
-                cout<<data<<" true";
                 return true;
             }
 
@@ -58,68 +54,89 @@ class BSTree {
 
         void insert(T data) {
 
-            Node<T> *temporal= new Node<T>;
-            temporal->data=data;
-            temporal->right= nullptr;
-            temporal->left= nullptr;
+            Node<T> *temporal= new Node<T>(data);
 
-            Node<T>*recorredor=this->root;
-            Node<T>*recorredor2;
+            Node<T>*recorredor=root;
 
             if(root==nullptr){
                 root=temporal;
+		return;
             }
 
             while (recorredor != nullptr) {
-                recorredor2 = recorredor;
-                if (data < recorredor->data){
-                    recorredor = recorredor->left;
+                	if (data < recorredor->data){
+			if(recorredor->left){
+                    	recorredor = recorredor->left;
+			}
+			else recorredor->left=temporal;
                 }
                 else{
-                    recorredor = recorredor->right;
+			if(recorredor->right) recorredor = recorredor->left;
+                        else recorredor->right=temporal;
                 }
-
-            }
-
-            if(data<recorredor2->data){
-                recorredor2->left=new Node<T>(data);
-        }
-            else if(data>recorredor2->data){
-                recorredor2->right=new Node<T>(data);
             }
             nodes++;
         }
 
-        bool remove(T data) {
+    Node<T>* minValueNode(Node<T>* node)
+    {
+        auto currentNode = node;
+        while(currentNode && currentNode->left)
+            currentNode = currentNode->left;
+        return currentNode;
+    }
+
+    bool remove(T data) {
             Node<T> *recorredor = root;
-            if (root == nullptr) {
-                return true;
-            }
+            Node<T> *recorredor2;
+
+            if (!find(data)) return false;
 
             if (data < recorredor->data) {
+                recorredor2=recorredor;
                 recorredor = recorredor->right;
                 remove(data);
             }
 
             else if (data > recorredor->data) {
+                recorredor2=recorredor;
                 recorredor = recorredor->left;
                 remove(data);
             }
 
             else {
 
-                if (root->left == nullptr) {
-                    Node<T> *temporal = root->right;
-                    delete (root);
+                if (recorredor->left == nullptr and recorredor->right == nullptr) {
+                    delete (recorredor);
                 }
 
-                else if (root->right == nullptr) {
-                    Node<T> *temporal = root->left;
-                    delete (root);
+                else if (recorredor->left && !recorredor->right) {
+                    recorredor2->left=recorredor->left;
+                    delete(recorredor);
                 }
+                else if(recorredor->right && !recorredor->left){
+                    recorredor2->right=recorredor->right;
+                    delete(recorredor);
+                }
+
+                else if (recorredor->right!=nullptr and recorredor->left!=nullptr) {
+                    Node<T> *temporal;
+                    temporal=minValueNode(recorredor->right);
+                    if(temporal!= nullptr){
+
+                    }
+                }
+
+                //Test
+
+
+                }
+                Node<T> *temporal = minValueNode(root->right);
+                root->data = temporal->data;
+                root->right = remove(root->right, temporal->data);
+
                 return true;
             }
-        }
 
         unsigned int size() {
             return this->nodes;

@@ -23,6 +23,8 @@ iostream
 -
 tester/tester.h
 /Users/jonathanprieto/Documents/GitHub/binary-search-tree-jonathanprieto99/tester/tester.h
+bstree.h
+/Users/jonathanprieto/Documents/GitHub/binary-search-tree-jonathanprieto99/bstree.h
 
 /Users/jonathanprieto/Documents/GitHub/binary-search-tree-jonathanprieto99/mocker/mocker.h
 random

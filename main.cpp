@@ -1,5 +1,6 @@
 #include <iostream>
 #include "tester/tester.h"
+#include "bstree.h"
 
 using namespace std;
 
