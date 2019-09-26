@@ -127,13 +127,7 @@ class BSTree {
                     }
                 }
 
-                //Test
                 }
-                Node<T> *temporal = minValueNode(root->right);
-                root->data = temporal->data;
-                root->right = remove(root->right, temporal->data);
-
-                return true;
             }
 
         unsigned int size() {
