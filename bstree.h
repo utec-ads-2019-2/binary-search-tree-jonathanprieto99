@@ -35,6 +35,7 @@ class BSTree {
 
         }
 
+        // Debería ser privado
         bool find2(T data,Node<T> *&temporal){//Profe puso Node<T>*&temporal
             if (temporal)
             {
@@ -55,6 +56,7 @@ class BSTree {
 
         bool insert(T data) {
 
+            // Podrías crear el nuevo nodo en un solo lado
             Node<T> *recorredor = root, *recorredor2;
             if(!root){
                 root = new Node<T>(data);
@@ -80,6 +82,7 @@ class BSTree {
             return true;
         }
 
+    // Debería ser privado
     Node<T>* minValueNode(Node<T>* node)
     {
         auto currentNode = node;
@@ -127,6 +130,7 @@ class BSTree {
 
                 else if (recorredor->left && !recorredor->right) {
                     recorredor2->left=recorredor->left;
+                    // Falta igualar a null
                     delete(recorredor);
                     nodes--;
                     return true;
@@ -139,12 +143,14 @@ class BSTree {
                 }
 
                 }
+                // Falta un return
             }
 
         unsigned int size() {
             return this->nodes;
         }
 
+    // No está funcionando bien
     bool remove(T data) {
         return MatadorNodos(this->root, data);
     }
@@ -205,6 +211,7 @@ class BSTree {
         }
 
         ~BSTree() {
+            // Killself está implementado?
             this->root->killself(this->root);
         }
 };

@@ -49,7 +49,7 @@ class Iterator {
             current = other.current;
             *stack1 = other.stack1;
             *stack2 = other.stack2;
-
+            // Falta return
         }
 
         bool operator!=(Iterator<T> other) {
